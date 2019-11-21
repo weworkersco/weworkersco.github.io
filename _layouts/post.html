@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<style type="text/css">
+  .post-footer {
+    margin-top: 50px;
+    border-top: 1px solid #ececec;
+    padding: 25px 0;
+    color: #666;
+  }
+</style>
+
+<a href="/">
+  <img alt="WeWorkers Coalition" class="logo" src="/logo.jpg">
+</a>
+
+<p>
+{{ page.date | date: "%b %d, %Y" }}
+</p>
+
+{{ content }}
+
+<p>
+  The WeWorkers Coalition<br>
+  <a href="https://twitter.com/weworkersco">@weworkersco</a> ·
+  <a href="mailto:info@weworkersco.org">info@weworkersco.org</a>
+</p>
+
+<div class="post-footer">
+  <p>All statements:</p>
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <span class="text-muted">{{ post.date | date: "%b %d, %Y" }}</span> <a href="{{ post.id }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
