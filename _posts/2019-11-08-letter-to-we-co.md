@@ -2,7 +2,7 @@
 layout: post
 title:  "Letter to We Company Management"
 date:   2019-11-08 00:00:00 -0500
-categories: statements
+categories: posts
 ---
 
 <p>
